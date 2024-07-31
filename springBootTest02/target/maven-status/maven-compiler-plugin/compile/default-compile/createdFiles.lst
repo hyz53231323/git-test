@@ -1,0 +1,6 @@
+com\example\service\bookService.class
+com\example\service\impl\bookServiceImpl.class
+com\example\controller\bookController.class
+com\example\SpringBootTest02Application.class
+com\example\entity\book.class
+com\example\mapper\bookMapper.class

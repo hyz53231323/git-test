@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="login-container">
+    <h2>用户登录</h2>
+    <form action="loggin" method="post">
+        <div class="form-group">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">登录</button>
+    </form>
+    <hr>
+    <div id="time"></div>
+    <br>
+    <button onclick="updateTime()">更新数据</button>
+    <script>
+        updateTime()
+    </script>
+</div>
+</body>
+</html>

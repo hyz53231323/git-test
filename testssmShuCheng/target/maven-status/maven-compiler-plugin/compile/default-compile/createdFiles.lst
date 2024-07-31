@@ -1,0 +1,5 @@
+com\example\service\bookService.class
+com\example\service\impl\bookServiceimpl.class
+com\example\controller\bookController.class
+com\example\entity\Book.class
+com\example\mapper\Bookmapper.class

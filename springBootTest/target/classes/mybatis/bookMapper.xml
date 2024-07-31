@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 命名空间将映射文件中的sql语句与mapper接口中的方法绑定起来，当调用接口中的方法时，mybatis知道执行哪个sql语句-->
+<mapper namespace="com.example.mapper.bookMapper">
+    <select id="selectAllBook" resultType="book">
+        select * from book
+    </select>
+</mapper>

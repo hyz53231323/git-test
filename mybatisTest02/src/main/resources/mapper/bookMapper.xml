@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="mapper.bookMapper">
+    <!--select查询语句-->
+    <select id="selectAllBook" resultType="Book">
+        select * from book
+    </select>
+
+    <select id="selectOneBook" resultType="Book">
+        select * from book where name = #{param1}
+    </select>
+    <insert id="insertBook">
+        insert into book(id,name,author,price) values (#{id},#{name},#{author},#{price})
+    </insert>
+    <delete id="deleteBookById">
+        delete from book where id = #{param1}
+    </delete>
+    <update id="updateBook">
+        update book set price = #{param2} where id = #{param1}
+    </update>
+</mapper>
